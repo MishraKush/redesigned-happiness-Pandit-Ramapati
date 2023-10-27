@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --navbar-height: 50px;
+    --primary: #ff7a57;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+}
+
+#logo {
+    margin: 20px 20px;
+}
+
+#logo img {
+    margin: 5px 50px 0px 50px;
+    padding: 0px 0px;
+    width: 250px;
+    filter: invert(100%);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#navbar::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.05;
+}
+#navbar ul {
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+    margin-right: 80px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size:1.2rem;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--gray);
+}
+
+#navbar ul li a:hover {
+    color: var(--gray-dark);
+    background-color: white;
+}
+
+#navbar ul li a:active {
+    color: var(--primary);
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    margin:150px 0 0 45% ;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#home p{
+    padding: 10px;
+}
+
+#homebg::before {
+    content: '';
+    background: url('../imgs/ai-generated-ayodhya.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#homeimg::before{
+    content: '';
+    background: url(/imgs/person.jpg) no-repeat center center/cover;
+    position: absolute;
+    margin: 10rem 0 0 12rem;
+    height: 12rem;
+    width: 12rem;
+    
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.h-primary{
+    font-size: 4rem;
+    padding: 10px;
+    color: var(--gray-dark);
+}
+.h-secondary{
+    font-size: 3rem;
+    padding: 10px;
+    color: var(--gray-dark);
+}
+
+.btn{
+    padding: 10px;
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+    border-radius: 50px;
+    color: white;
+    margin: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
