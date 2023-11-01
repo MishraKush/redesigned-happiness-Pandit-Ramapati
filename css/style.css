@@ -10,6 +10,8 @@
     --gray-dark: #343a40;
 }
 
+/* Navbar */
+
 #logo {
     margin: 20px 20px;
 }
@@ -24,7 +26,7 @@
 #navbar {
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
     top: 0px;
 }
 #navbar::before {
@@ -55,11 +57,11 @@
     text-decoration: none;
     padding: 10px;
     border-radius: 20px;
-    color: var(--gray);
+    color: var(--gray-dark);
 }
 
 #navbar ul li a:hover {
-    color: var(--gray-dark);
+    color: var(--gray);
     background-color: white;
 }
 
@@ -67,6 +69,8 @@
     color: var(--primary);
     background-color: white;
 }
+
+/* Home */
 
 #home {
     display: flex;
@@ -95,11 +99,42 @@
     content: '';
     background: url(/imgs/person.jpg) no-repeat center center/cover;
     position: absolute;
-    margin: 10rem 0 0 12rem;
+    margin: 13rem 0 0 18rem;
     height: 12rem;
     width: 12rem;
     
 }
+
+#services-container{
+    position: relative;
+    margin-top: 15%;
+    z-index: -1;
+}
+
+#services{
+    margin: 60px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid var(--primary);
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    z-index: -1;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
 
 footer{
     background: black;
