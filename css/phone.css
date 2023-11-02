@@ -48,10 +48,11 @@
 
 #homeimg::before {
     content: '';
-    background: url(/imgs/person.jpg) no-repeat center center/cover;
+    background: url(/imgs/person1-nobg-mirror.png) no-repeat center center/cover;
     margin: 8% 25%;
     z-index: -1;
-
+    height: 14rem;
+    width: 12rem;
 }
 
 /* About Me Section*/
@@ -60,7 +61,8 @@
 }
 
 #about-me-content img {
-    width: 14rem;
+    width: 16rem;
+    height: 16rem;
     margin: auto;
     margin-top: 20px;
 }
