@@ -29,17 +29,19 @@
     position: sticky;
     top: 0px;
 }
+
 #navbar::before {
     content: "";
     background-color: white;
     position: absolute;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     height: 100%;
-    width:100%;
+    width: 100%;
     z-index: -1;
-    opacity: 0.05;
+    opacity: 0.1;
 }
+
 #navbar ul {
     display: flex;
     flex: auto;
@@ -49,7 +51,7 @@
 
 #navbar ul li {
     list-style: none;
-    font-size:1.2rem;
+    font-size: 1.2rem;
 }
 
 #navbar ul li a {
@@ -74,15 +76,17 @@
 
 #home {
     display: flex;
-    margin:150px 0 0 45% ;
+    margin: 150px 0 0 45%;
     width: 50%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-#home p{
+#home p {
     padding: 10px;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
 }
 
 #homebg::before {
@@ -95,28 +99,67 @@
     z-index: -1;
     opacity: 0.6;
 }
-#homeimg::before{
+
+#homeimg::before {
     content: '';
     background: url('../imgs/person.jpg') no-repeat center center/cover;
     position: absolute;
     margin: 13rem 0 0 18rem;
     height: 12rem;
     width: 12rem;
-    
+
 }
 
-#services-container{
+/* About Me */
+
+#about-me h1 {
     position: relative;
     margin-top: 15%;
+    margin-bottom: 2%;
     z-index: -1;
 }
 
-#services{
+#about-me-content {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    width: 80%;
+    background-color: #ff795717;
+    /* align-content: flex-start; */
+    z-index: -1;
+
+}
+
+#about-me-content img {
+    /* height: 12px; */
+    width: 20rem;
+    margin: 25px 12%;
+}
+
+#about-me-content p {
+    margin: 25px 0;
+    padding: 8px 8px;
+}
+
+/* Services */
+
+#services-container h1 {
+    position: relative;
+    margin-top: 10%;
+    z-index: -1;
+}
+
+#services {
     margin: 60px;
     display: flex;
+    flex-wrap: wrap;
 }
-#services .box{ 
+
+#services .box {
     border: 2px solid var(--primary);
+    width: 20%;
     padding: 34px;
     margin: 2px 55px;
     border-radius: 28px;
@@ -125,35 +168,101 @@
     z-index: -1;
 }
 
-#services .box img{ 
-   height: 160px;
-   margin: auto;
-   display: block;
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
 }
 
-#services .box p{
+#services .box p {
     font-family: 'Bree Serif', serif;
 
-} 
+}
 
-footer{
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+.contact-content-text{
+    padding-top: 40px;
+    font-size: 1.2rem;
+}
+
+.social-icons{
+    display: flex;
+    margin: auto;
+    padding-top: 15px;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 1rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 6px;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+/* Youtube */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .fa-whatsapp {
+    background: #128C7E;
+    color: white;
+  }
+
+.fa-blogger img{
+    margin-top: 6px;
+    margin-left: 8px;
+    width: 3.2rem;
+}
+
+footer {
     background: black;
     color: white;
     padding: 9px 20px;
 }
 
-.h-primary{
+.h-primary {
     font-size: 4rem;
     padding: 10px;
     color: var(--gray-dark);
 }
-.h-secondary{
+
+.h-secondary {
     font-size: 3rem;
     padding: 10px;
     color: var(--gray-dark);
 }
 
-.btn{
+.btn {
     padding: 10px;
     border: 2px solid var(--primary);
     background-color: var(--primary);
@@ -164,6 +273,12 @@ footer{
     cursor: pointer;
 }
 
-.center{
+.center {
     text-align: center;
+}
+
+.whatsapp-icon{
+    position: sticky;
+        top: 41rem;
+    left: 88rem;
 }

@@ -1,6 +1,7 @@
 /* Navigation */
 #navbar {
     flex-direction: column;
+    position: relative;
 }
 
 #navbar ul {
@@ -10,7 +11,7 @@
     margin: auto;
 }
 
-#navbar ul li a{
+#navbar ul li a {
     font-size: 1rem;
     padding: 0px 7px;
     padding-bottom: 4px;
@@ -18,7 +19,7 @@
 
 
 /* Home section */
-#home{
+#home {
     margin: 16rem 0 0 0;
     flex-direction: column;
     align-items: center;
@@ -26,11 +27,11 @@
     height: 375px;
 }
 
-#home::before{
-    height: 480px; 
+#home::before {
+    height: 480px;
 }
 
-#home p{
+#home p {
     font-size: 13px;
 }
 
@@ -39,38 +40,65 @@
     background: url('../imgs/ai-generated-ayodhya.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0;
-    height: 100%;
+    height: 92%;
     width: 100%;
     z-index: -1;
     opacity: 0.6;
 }
-#homeimg::before{
+
+#homeimg::before {
     content: '';
     background: url(/imgs/person.jpg) no-repeat center center/cover;
     margin: 8% 25%;
     z-index: -1;
-    
+
 }
 
-
-/* Services section  */
-#services{
+/* About Me Section*/
+#about-me-content {
     flex-direction: column;
 }
 
-#services .box { 
+#about-me-content img {
+    width: 14rem;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#about-me-content p {
+    margin: 30px 2rem;
+    padding: 14px 14px;
+}
+
+/* Services section  */
+#services {
+    flex-direction: column;
+}
+
+#services .box {
     padding: 14px;
-    margin: 2px 0px; 
+    width: 90%;
+    margin: 2px 0px;
     margin-bottom: 20px;
 }
 
-/* Footer */
+/* Contact Me */
+.contact-content {
+    flex-direction: column;
+}
+
+.whatsapp-icon {
+    position: sticky;
+    top: 53rem;
+    left: 21rem;
+}
 
 /* Utility classes */
-.h-primary{
-    font-size:26px;
+.h-primary {
+    font-size: 26px;
 }
-.btn{
+
+.btn {
     font-size: 13px;
     padding: 4px 8px;
-}   
+}
